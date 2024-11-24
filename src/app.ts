@@ -7,6 +7,8 @@ import { Review } from "./constants";
 import { env } from "./env";
 import { processPullRequest } from "./review-agent";
 import { applyReview } from "./reviews";
+import * as dotenv from "dotenv";
+dotenv.config();
 
 // This creates a new instance of the Octokit App class.
 const reviewApp = new App({
